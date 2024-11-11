@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turn On Camera</title>
+  </head>
+  <body>
+    <button onclick="turnOnCamera()">verify biometric</button>
+    <video id="camera" autoplay playsinline></video>
+    <p>
+        <h2><a href="success.html"> <input type="submit" value="click to submit"
+            />
+        </a></h2> 
+    </p>
+
+    <script>
+      async function turnOnCamera() {
+        try {
+          const stream = await navigator.mediaDevices.getUserMedia({
+            video: true,
+          });
+          const videoElement = document.getElementById("camera");
+          videoElement.srcObject = stream;
+        } catch (error) {
+          console.error("Error accessing the camera:", error);
+          alert(
+            "Could not access the camera. Please check your browser permissions."
+          );
+        }
+      }
+    </script>
+  </body>
+</html>
