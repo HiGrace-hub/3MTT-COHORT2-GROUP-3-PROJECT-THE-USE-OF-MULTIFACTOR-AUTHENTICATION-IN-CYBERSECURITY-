@@ -4,19 +4,23 @@ Embedding Multi-factor authentication into simple login template in securing una
 Here’s a breakdown of how the multi-factor authentication (MFA) login process was implemented across four HTML files:
 
 1. Login Page (index.html)
+   
 Purpose: Collects the username and password.
+
 Process:
 The user enters their credentials in the input fields for "Username" and "Password."
 After entering the details, clicking the "Login" button redirects to the biometric verification page (biometric.html) through an anchor link.
-2. Biometric Verification Page (biometric.html)
+
+3. Biometric Verification Page (biometric.html)
+   
 Purpose: Uses the device’s camera for facial verification as a second authentication factor.
 
 Process:
-
 Displays a button labeled "verify biometric" to activate the camera.
 When the button is clicked, the JavaScript function turnOnCamera() attempts to access the user's camera using the getUserMedia API.
 If the camera is accessible, the video stream is displayed on the page.
 The user can click the "Submit" button, which leads to the success confirmation page (success.html) upon successful verification.
+
 JavaScript Code Explanation:
 
 javascript
@@ -33,11 +37,15 @@ async function turnOnCamera() {
 }
 The function prompts the browser to request camera access.
 If access is denied or an error occurs, it displays an alert message.
+
 3. Successful Login Confirmation Page (success.html)
+
 Purpose: Notifies the user of a successful login after passing both factors (password and facial verification).
+
 Process:
 Displays a confirmation message: "Login Successful!"
 Provides a link to return to the initial login page.
+
 4. Styling and Animation (style.css)
 The layout and design are controlled by the linked style.css file, making the form look aesthetically pleasing with animations and responsive styles.
 Overall Flow
