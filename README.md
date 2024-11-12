@@ -11,7 +11,7 @@ Process:
 The user enters their credentials in the input fields for "Username" and "Password."
 After entering the details, clicking the "Login" button redirects to the biometric verification page (biometric.html) through an anchor link.
 
-3. Biometric Verification Page (biometric.html)
+2. Biometric Verification Page (biometric.html)
    
 Purpose: Uses the device’s camera for facial verification as a second authentication factor.
 
