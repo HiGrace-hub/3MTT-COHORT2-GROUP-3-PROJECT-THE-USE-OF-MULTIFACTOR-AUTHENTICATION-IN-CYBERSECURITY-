@@ -1,4 +1,4 @@
-# 3MTT-COHORT2-GROUP-3-PROJECT-THE-USE-OF-MULTIFACTOR-AUTHENTICATION-IN-CYBERSECURITY-
+# 3MTT-THE-USE-OF-MULTIFACTOR-AUTHENTICATION-IN-CYBERSECURITY-
 Embedding Multi-factor authentication into simple login template in securing unauthorised access in cybersecurity
 
 Here’s a breakdown of how the multi-factor authentication (MFA) login process was implemented across four HTML files:
